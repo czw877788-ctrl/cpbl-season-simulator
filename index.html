@@ -1,0 +1,48 @@
+html
+<!DOCTYPE html>
+<html lang="zh-Hant-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CPBL 職棒選秀與賽季模擬器</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>⚾ CPBL 職棒選秀與賽季模擬器</h1>
+        
+        <!-- 選秀區塊 -->
+        <div id="draft-section">
+            <h2>第一階段：挑選你的夢幻球星 (請選 4 位)</h2>
+            <div id="draft-pool" class="card-grid"></div>
+        </div>
+
+        <!-- 賽季模擬區塊（初始隱藏，選完球員後顯示） -->
+        <div id="season-section" class="hidden">
+            <h2>第二階段：完整 120 場賽季模擬</h2>
+            <div class="my-team-box">
+                <h3>你的球隊陣容：</h3>
+                <p id="my-team-list"></p>
+            </div>
+            <button id="sim-btn">⚡ 開始模擬全賽季</button>
+            
+            <h3 style="margin-top: 20px;">🏆 最終賽季戰績排行</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>排名</th>
+                        <th>球隊</th>
+                        <th>勝</th>
+                        <th>敗</th>
+                        <th>勝率</th>
+                    </tr>
+                </thead>
+                <tbody id="standings-body">
+                    <tr><td colspan="5" style="text-align:center; color:#888;">尚未進行模擬</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
