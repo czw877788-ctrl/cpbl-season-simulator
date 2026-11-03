@@ -1,5 +1,3 @@
-javascript
-// 1. CPBL 實名球員池
 const cpblPlayers = [
     { name: "陳傑憲", type: "打者", ovr: 90, info: "統一獅 - 速度與打擊兼備" },
     { name: "吉力吉撈", type: "打者", ovr: 92, info: "味全龍 - 重砲轟炸機" },
